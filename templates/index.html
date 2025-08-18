@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brute Force Simulator</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #222;
+            color: #fff;
+            padding: 30px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        progress {
+            width: 80%;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Brute Force Simulator</h1>
+    <form id="attackForm">
+        <input type="text" id="password" placeholder="Enter password" required>
+        <button type="submit">Start Attack</button>
+    </form>
+    
+    <progress id="progressBar" value="0" max="100"></progress>
+    <p id="status">Waiting...</p>
+    
+    <script>
+        document.getElementById("attackForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const password = document.getElementById("password").value;
+
+            // Open SSE connection with GET
+            const eventSource = new EventSource("/start_attack?" + new URLSearchParams({ password }));
+
+            eventSource.onmessage = function (e) {
+                const data = JSON.parse(e.data);
+                if (data.status === "progress") {
+                    document.getElementById("progressBar").value = data.progress;
+                    document.getElementById("status").innerText = `Guessing: ${data.guess} (Attempts: ${data.attempts})`;
+                } else if (data.status === "done") {
+                    document.getElementById("progressBar").value = 100;
+                    document.getElementById("status").innerText = data.password ?
+                        `Password found: ${data.password} in ${data.attempts} attempts` :
+                        `Password not found after ${data.attempts} attempts`;
+                    eventSource.close();
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

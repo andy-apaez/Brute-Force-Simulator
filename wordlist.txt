@@ -1,0 +1,9 @@
+password
+123456
+qwerty
+letmein
+admin
+welcome
+iloveyou
+password123
+helloworld
