@@ -5,6 +5,10 @@ This educational tool demonstrates how brute-force and dictionary attacks work, 
 It helps users understand the importance of strong, complex passwords and common vulnerabilities.
 
 ---
+## Demo
+![Demo of Brute Force Simulator](![REC-20250818083117-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6027b7b8-d2c5-4241-9dd5-73df24eb4fa6))
+
+---
 Features ✨
 
 Dictionary Attack – Quickly guesses common passwords from a wordlist.
