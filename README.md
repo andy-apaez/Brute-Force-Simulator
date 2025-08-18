@@ -6,7 +6,7 @@ It helps users understand the importance of strong, complex passwords and common
 
 ---
 ## Demo
-![Demo of Brute Force Simulator](![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bb91f59-6c8a-4436-a63d-716eaf846376))
+[Demo of Brute Force Simulator]![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bb91f59-6c8a-4436-a63d-716eaf846376))
 
 ---
 Features ✨
