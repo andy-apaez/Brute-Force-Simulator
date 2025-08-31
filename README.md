@@ -6,7 +6,7 @@ It helps users understand the importance of strong, complex passwords and common
 
 ---
 ## Demo
-[Demo of Brute Force Simulator]![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bb91f59-6c8a-4436-a63d-716eaf846376))
+(https://github.com/user-attachments/assets/8bb91f59-6c8a-4436-a63d-716eaf846376)
 
 ---
 Features ✨
@@ -15,11 +15,9 @@ Dictionary Attack – Quickly guesses common passwords from a wordlist.
 
 Mutated Variations – Tests variations like capitalized words, numbers, and common substitutions.
 
-Brute Force Attack – Attempts all possible combinations of characters up to a specified length. (current limit is around 6 million)
+Brute Force Attack – Attempts all possible combinations of characters up to a specified length. (current is 5 characters long, but can be configured)
 
 Real-Time Streaming – Live progress bar, attempts counter, and current guess display.
-
-Speed Indicator – Shows guesses per second in real time.
 
 ---
 Installation ⚙️
@@ -72,7 +70,7 @@ Understand the mechanics of brute-force and dictionary attacks.
 
 Learn how password complexity affects security.
 
-Explore real-time data streaming with Flask and JavaScript (SSE).
+Explore real-time data streaming with Flask and Server-Sent Events (SSE) using JavaScript.
 
 Gain experience in building interactive web-based security simulations.
 
