@@ -5,8 +5,9 @@ This educational tool demonstrates how brute-force and dictionary attacks work, 
 It helps users understand the importance of strong, complex passwords and common vulnerabilities.
 
 ---
-## Demo
-(https://github.com/user-attachments/assets/8bb91f59-6c8a-4436-a63d-716eaf846376)
+## Demo 
+
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/89776196-8bc1-479e-b726-e087b542308e)
 
 ---
 Features ✨
